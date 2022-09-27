@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+   <!--CDN BOOTSTRAP-->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
     <link rel="shortcut icon" href="imagenes/Sembrá-Vida.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
 
@@ -17,67 +20,56 @@
 
 </head>
 
+
 <body>
     <header class="header-menu">
-        <div class="logo-nav">
-
-            <nav class="contenedor-nav">
-                <div> <img class="logo-header" src="imagenes/Sembrá Vida.png" alt="Logo plantita" height="100" width="">
+        <nav class="navbar navbar-expand-lg bg-white">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img class="header-logo" src="imagenes/Sembrá-Vida.ico" alt="logo sembra vida" width="70px" height="70px">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse d-flex navbar-align" id="navbarNavAltMarkup">
+                <div class="navbar-nav navbar-size">
+                  <a class="nav-link active nav-pad" aria-current="page" href="index.html">INICIO</a>
+                  <a class="nav-link nav-pad" href="Quienessomos.html">¿QUIENES SOMOS?</a>
+                  <a class="nav-link nav-pad" href="Proyectos.html">PROYECTOS</a>
+                  <a class="nav-link nav-pad" href="Contacto.html">CONTACTO</a>
+                  <a class="nav-link nav-dona" href="Doná.html">DONÁ</a>
                 </div>
-                <ul>
-                    <li>
-                        <a href="index.html">INICIO</a>
-                    </li>
-
-                    <li>
-                        <a href="Quienessomos.html">¿QUIENES SOMOS?</a>
-                    </li>
-
-                    <li>
-                        <a href="Proyectos.html">PROYECTOS</a>
-                    </li>
-
-                    <li>
-                        <a href="Contacto.html">CONTACTO</a>
-                    </li>
-
-                    <li>
-                        <a href="Doná.html">DONÁ</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+              </div>
+            </div>
+          </nav>
 
     </header>
 
-    <body>
+    <div class="section1-text">
+        <img  src="imagenes/hojas.webp" class="img-fluid fondo" alt="fondo de hojitas">
+        <h1 class="class-h1">¿Quienes somos?</h1>
+        <h2 class=" banner banner1">Somos un ecosistema de organizaciones de la sociedad civil</h2>
 
-        <div class="section2-text">
-            <h1 class="section2-h1">¿Quienes somos?</h1>
-            <h2 class="section2-h2">Somos un ecosistema de organizaciones de la sociedad civil, instituciones, empresas
-                y personas, dedicadas a
-                la preservación y reforestación de bosques nativos para la mitigación del cambio climático.</h2>
-        </div>
+    </div>
 
-        <section class="section-misionvision">
-            <div class="conten-mision">
+
+       <section class="section-misionvision container-fluid">
+         
+               
+          <div class="conten-mision ">
                 <h2 class="mision-h2">MISIÓN</h2>
                 <p class="text-mision">Reciclar, compostar, reducir el consumo de plástico o plantar árboles, son
                     pequeños
                     esfuerzos que ayudan
                     a reducir tu huella de carbono. Especialmente cuando millones de personas empiezan a hacer las
                     mismas
-                    cosas. Por esta razón, en Sembra Vida estamos comprometidos a contribuir en este proceso</p>
+                    cosas.</p>
             </div>
 
-            <div class="content-vision">
+
+            <div class="content-vision container-fluid">
                 <H2 class="mision-h2">VISIÓN</H2>
-                <p class="text-vision"> Como parte de la nueva generación que quiere un desarrollo sostenible, con
-                    transparencia y
-                    beneficios
-                    sociales y ambientales, en Sembrá vida creemos que como sociedad tenemos la responsabilidad de
-                    proteger
-                    y preservar el mundo en el que vivimos. Ese es nuestro propósito.</p>
+                <p class="text-vision"> Como parte de la nueva generación que quiere un desarrollo sostenible, con transparencia y beneficios sociales y ambientales. Tenemos la responsabilidad de proteger y preservar el mundo en el que vivimos.</p>
             </div>
         </section>
 
@@ -85,47 +77,74 @@
             <h2 class="staff-sembra">Staff Sembrá Vida</h2>
             <div class="staff-fotos">
                 <div>
-                    <img class="staff-foto1" src="imagenes/retratos-perfil-profesional-15.jpg" alt="foto profesional">
+                    <img class=" staff-foto staff-foto1" src="imagenes/retratos-perfil-profesional-15.jpg" alt="foto profesional">
                     <p class="nombre">Rocio Karo -
                         Directora ejecutiva</p>
                 </div>
 
                 <div>
-                    <img class="staff-foto2" src="imagenes/fotoprofesional1.jpg" alt="foto profesional">
+                    <img class="staff-foto staff-foto2" src="imagenes/fotoprofesional1.jpg" alt="foto profesional">
                     <p class="nombre">Florencia Recko -
                         Directora de proyectos</p>
                 </div>
                 <div>
-                    <img class="staff-foto3" src="imagenes/fotoprofesional2.jpg" alt="foto profesional">
+                    <img class="staff-foto staff-foto3" src="imagenes/fotoprofesional2.jpg" alt="foto profesional">
                     <p class="nombre">Jennifer Teper -
                         Fundraising</p>
                 </div>
             </div>
         </section>
 
-    </body>
+         <!--JS DE BOOTSTRAPS-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
 
-    <footer>
-        <div class="footer">
-            <a href="https://web.whatsapp.com/" target="_blank">
-                <img class="footer1" src="imagenes/Whatsapp.png" alt="Comunicate por whatsapp">
-            </a>
-
-            <p class="p-redes">Seguinos en redes sociales</p>
-
-            <a href="https://www.instagram.com/" target="_blank">
-                <img class="footer2" src="imagenes/instagram.png" alt="Instagram">
-            </a>
-
-            <a href="http://https://www.facebook.com/" target="_blank">
-                <img class="footer3" src="imagenes/facebook.png" alt="Facebook">
-            </a>
-
-            <a href="https://www.youtube.com/" target="_blank">
-                <img class="footer4" src="imagenes/youtube.png" alt="Youtube">
-            </a>
+    
+    <footer class="text-center text-white" style="background-color: #f1f1f1;">
+ 
+        <div class="container pt-4">
+     
+          <section class="mb-4 footer-section">
+          
+           
+            <a
+              class="btn btn-link btn-floating btn-lg text-dark m-1"
+              href="https://www.facebook.com/" target="_blank"
+              role="button"
+              data-mdb-ripple-color="dark"
+              ><i class="fab fa-facebook-f"></i
+            > <img class="footer1" src="imagenes/facebook.png" alt="logo facebook"></a>
+    
+      
+          
+            <a
+              class="btn btn-link btn-floating btn-lg text-dark m-1"
+              href="https://www.instagram.com/" target="_blank"
+              role="button"
+              data-mdb-ripple-color="dark"
+              ><i class="fab fa-instagram"></i
+            ><img class="footer2" src="imagenes/instagram.png" alt="logo instagram"></a>
+      
+            <a
+              class="btn btn-link btn-floating btn-lg text-dark m-1"
+              href="https://www.whatsapp.com/" target="_blank"
+              role="button"
+              data-mdb-ripple-color="dark"
+              ><i class="fab fa-instagram"></i
+            ><img class="footer3" src="imagenes/Whatsapp.png" alt="logo whatsapp"></a>
+           
+          </section>
+        
         </div>
-    </footer>
+        
+      
+      
+        <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          Rocio Jesica Karo
+        </div>
+    
+      </footer>
+</body>
 
 
 </html>
