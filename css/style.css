@@ -17,24 +17,15 @@ html {
 /*Inicio*/
 
 .navbar-size{
-    font-size: 16px;
-    color: dark;
-    padding: 10px;
-  
-}
-
-.navbar-align{
+    font-size: 14px; 
     justify-content: end;
-    align-content: space-around;
 }
 
 
 .nav-dona{
     color: #73A9AD;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: bold;
-    padding-right: 5px;
-   
 }
 
 .section1-text {
@@ -135,15 +126,6 @@ h1 {
 }
 
 
-.section2-h2b {
-    font-size: 18px;
-    color: black;
-    align-content: center;
-    justify-content: center;
-    padding-top: 260px;
-    position: absolute;
-}
-
 .section-misionvision {
     display: flex;
     height: auto;
@@ -151,36 +133,26 @@ h1 {
     justify-content: space-around;
     background-color: #efedd8;
     width: 100%;
+    font-size: 18px;
+    padding: 25px;
    
-    
 
 }
 
-.conten-mision {
-    width: 100%;
-    height: auto;
-    margin: 50px;
+
+.mision{
+   text-align: center;
+  background-color: #90c8ac75;
+   margin-right: 10px;
+   
+}
+
+.vision{
     text-align: center;
-    font-size: 18px;
-    padding: 20px;
-    position: relative;
-
+    background-color: #90c8ac75;
+    margin-left: 10px;
 }
 
-.content-vision {
-    width: 100%;
-    height: auto;
-    margin: 50px;
-    text-align: center;
-    font-size: 18px;
-    padding: 20px;
-    position: relative;
-}
-
-.mision-h2 {
-    font-size: 25px;
-    text-align: center;
-}
 
 .staff {
 display: flex;
@@ -200,7 +172,7 @@ position: absolute;
 
 .staff-fotos {
     width: 100%;
-    height: 450px;
+    height: auto;
     background-color: #90c8ac75;
     display: flex;
     justify-content: space-between;
@@ -277,14 +249,15 @@ position: absolute;
     padding: 20px;
     gap: 10px;
     background-color: #73A9AD;
+    flex-wrap: wrap;
     
 }
 
 .gallery-item{
-    height: 300px;
+    height: 250px;
 }
 .gallery-img{
-    width: 100%;
+    width: 80%;
     height: 100%;
     object-fit: cover;
     padding-right: -30px;
@@ -310,48 +283,47 @@ position: absolute;
 /*CONTACTO*/
 
 .conten-contacto {
-    width: 50%;
+    width: 100%;
     height: auto;
     display: flex;
-    align-content: center;
-    align-items: center;
-    background-color: #90c8acb2;
-    margin-left: 400px;
+    background-color: #73A9AD;
+    justify-content: center;
+    
 }
 
 
 .contacto {
     font-size: 18px;
-    font-weight: bold;
     display: flex;
-    display: inline-block;
+    height: auto;
     justify-content: center;
-    align-content: center;
-    text-align: center;
-    justify-items: center;
-    height: 150px;
-    background-color: #73A9AD;
-    padding-top: 50px;
+    align-items: center;
+    padding: 10px;
+    font-weight: bolder;
+  
+}
+.container-mapa{
+    display: flex;
 }
 
 .mapa {
     display: flex;
     justify-content: center;
-    justify-items: center;
-    align-items: center;
-    align-content: center;
-    background-color: #90c8acb2;
+    width: auto;
+    margin: 50px;
 }
 
-.formulario{
-    display: flex;
-    font-size: 18px;
-    background-color:#efedd8 ;
-    align-items: center;
-    justify-items: center;
-    justify-content: center;
-    align-content: center;
-    padding-bottom: 50px;  
+
+
+.header {
+    color: #36A0FF;
+    font-size: 27px;
+    padding: 10px;
+}
+
+.bigicon {
+    font-size: 35px;
+    color: #36A0FF;
 }
 
 .content-dona{
@@ -406,14 +378,14 @@ padding: 5px;
 /*Mobile*/
 @media only screen and (max-width:450px) {
   h1 {
-    font-size: 30px;  
+    font-size: 25px;  
   }
   .banner{
     font-size: 12px;
     text-align: center;
   }
   .class-h1{
-    font-size: 30px; 
+    font-size: 25px; 
   }
   .conten-mision{
     font-size: 12px;
@@ -439,6 +411,42 @@ justify-content: space-around;
     font-size: 12px;
     max-width: 30%;
   }
+  .mision-h2{
+    font-size: 12px;
+}
+
+.staff{
+    height: auto;
+    width: 150px;
+}
+
+.staff-foto{
+    height: 80px;
+    width: 80px;
+    justify-content: center;
+    
+}
+.nombre{
+    font-size: 12px;
+    justify-content: space-around;
+}
+.staff-sembra{
+    font-size: 16px;
+}
+.text-video{
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px;
+   text-align: center;
+}
+
+.gallery-container{
+display: none;
+}
+
+.section-misionvision{
+font-size: 12px;
+}
 
   
   }
@@ -448,7 +456,7 @@ justify-content: space-around;
 /*Tablet*/
 @media only screen and (min-width:451px) and (max-width:960px){
 h1{
-    font-size: 35px;  
+    font-size: 30px;  
 
 }
 .banner{
@@ -456,7 +464,7 @@ h1{
 }
 
 .class-h1{
-    font-size: 35px; 
+    font-size: 30px; 
 }
 
 .banner1{
@@ -515,40 +523,8 @@ justify-content: space-around;
    .gallery-container{
     display: none;
    }
-}
-
-
-
-@media only screen and (max-width:450px){
-   
-    .mision-h2{
-        font-size: 12px;
-    }
-
-    .staff{
-        height: auto;
-        width: 150px;
-    }
-
-    .staff-foto{
-        height: 80px;
-        width: 80px;
-        justify-content: center;
-        
-    }
-    .nombre{
-        font-size: 12px;
-        justify-content: space-around;
-    }
-    .staff-sembra{
-        font-size: 16px;
-    }
-    .text-video{
-        font-size: 12px;
-        font-weight: bold;
-    }
-    
-   .gallery-container{
-    display: none;
+   .section-misionvision{
+    font-size: 14px;
    }
 }
+
