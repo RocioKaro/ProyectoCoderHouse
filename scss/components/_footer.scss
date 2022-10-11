@@ -1,0 +1,28 @@
+@import '../base/listas';
+
+footer {
+    .footer-section {
+        align-items: center;
+
+        .footer1 {
+            width: 25px;
+            height: 25px;
+            align-content: space-around;
+            justify-content: space-around;
+        }
+
+        .footer2 {
+            width: 30px;
+            height: 30px;
+            align-content: space-around;
+            justify-content: space-around;
+        }
+
+        .footer3 {
+            width: 30px;
+            height: 30px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+    }
+}

@@ -1,0 +1,42 @@
+@import '../base/listas';
+
+.content-dona {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    padding: 10px;
+    background-color: nth($colores, 5);
+    font-size: nth($font-size, 4);
+    text-align: center;
+
+}
+
+
+.contentarbol1 {
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: space-around;
+    align-content: center;
+    padding: 10px;
+
+    .arboles {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        width: 80%;
+
+        }
+    }
+
+
+.linea {
+    background-color: nth($colores, 1);
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}

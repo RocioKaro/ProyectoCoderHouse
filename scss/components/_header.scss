@@ -1,0 +1,26 @@
+@import '../base/listas';
+
+
+header {
+    .navheader {
+        background-color: white;
+        div {
+            .navbar-size {
+                font-size: 14px;
+                justify-content: end;
+                ul {
+                    li{
+                        .nav-dona {
+                            color: nth($colores,1);
+                            font-size: 14px;
+                            font-weight: bold;
+                        }
+                    }
+
+                }
+            }
+
+        }
+    }
+
+}

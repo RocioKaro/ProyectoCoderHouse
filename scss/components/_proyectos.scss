@@ -1,0 +1,88 @@
+@import '../base/listas';
+@import '../components/header';
+
+/*PROYECTOS*/
+
+.section-project {
+    width: 100%;
+    height: auto;
+
+    .textovideo {
+        font-size: nth($font-size, 3);
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+        width: 100%;
+        height: 80px;
+        background-color: #73A9AD;
+
+        .text-video {
+            @media only screen and (max-width:450px) {
+                font-size: nth($font-size, 1);
+                font-weight: bold;
+                padding: 5px;
+                text-align: center;
+            }
+
+            @media only screen and (min-width:451px) and (max-width:960px) {
+                font-size: nth($font-size, 1);
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background-color: #90c8acb2;
+    width: 100%;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    padding: 20px;
+    gap: 10px;
+    background-color: #73A9AD;
+    flex-wrap: wrap;
+
+    .gallery-item {
+        height: 250px;
+
+        .gallery-img{
+            width: 80%;
+            height: 100%;
+            object-fit: cover;
+            padding-right: -30px;
+        }
+    }
+
+    .gallery-item{
+        height: 250px;
+        .gallery-text{
+            width: 100%;
+            height: 100%;
+            position:relative;
+            font-size: nth($font-size, 2);
+            font-family: 'Arimo', sans-serif;
+            justify-content: flex-start;
+            align-content: center;
+            padding-top: 80px;
+            padding-left: -80px;
+           padding-right: 20px;
+           background-color: nth($colores, 1);
+        }
+    }
+    @media only screen and (max-width:450px){
+        display: none;
+    }
+
+    @media only screen and (min-width:451px) and (max-width:960px){
+        display: none;
+    }
+
+}

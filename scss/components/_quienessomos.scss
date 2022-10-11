@@ -1,0 +1,137 @@
+@import '../base/listas';
+
+/*QUIENES SOMOS*/
+
+.section1-text {
+    .banner1 {
+        font-size: 20px;
+        color: black;
+        text-align: center;
+        justify-content: center;
+        padding-top: 225px;
+        position: absolute;
+    }
+
+    @media only screen and (max-width:450px) {
+        .class-h1 {
+            font-size: 25px;
+        }
+    }
+
+    @media only screen and (min-width:451px) and (max-width:960px) {
+        .class-h1 {
+            font-size: 30px;
+        }
+
+        .banner1 {
+            font-size: 14px;
+        }
+    }
+}
+
+.section-misionvision {
+    display: flex;
+    height: auto;
+    align-content: space-between;
+    justify-content: space-around;
+    width: 100%;
+    font-size: 18px;
+    padding: 25px;
+
+    .mision {
+        text-align: center;
+        background-color: nth($colores, 5);
+        margin-right: 10px;
+    }
+
+    .vision {
+        text-align: center;
+        background-color: nth($colores, 5);
+        margin-left: 10px;
+    }
+}
+
+.staff {
+    display: flex;
+    align-content: space-around;
+
+    .staff-sembra {
+        height: 60px;
+        background-color: nth($colores, 2);
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        justify-content: space-around;
+        align-items: center;
+        position: absolute;
+    }
+
+    .staff-fotos {
+        width: 100%;
+        height: auto;
+        background-color: nth($colores, 2);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 40px;
+        margin-top: 60px;
+
+
+        .foto1 {
+            width: 100%;
+
+            .staff-foto1 {
+                background-size: cover;
+                border-radius: 20%;
+                object-fit: cover;
+                justify-content: center;
+                display: block;
+                margin: 0 auto;
+                max-width: 100%;
+                width: 80%;
+            }
+
+            .nombre {
+                font-size: 16px;
+                display: flex;
+                align-content: center;
+                font-weight: bold;
+                padding: 10px;
+                margin-top: 15px;
+                width: 100%;
+            
+                
+
+
+            }
+        }
+
+        .foto3 {
+            width: 100%;
+            
+            .staff-foto3 {
+                background-size: cover;
+                border-radius: 20%;
+                object-fit: cover;
+                justify-content: center;
+                display: block;
+                margin: 0 auto;
+                max-width: 100%;
+                width: 80%;
+
+            }
+
+            .nombre {
+                font-size: 16px;
+                display: flex;
+                font-weight: bold;
+                padding: 10px;
+                margin-top: 15px;
+                width: 100%;
+                
+            }
+
+            
+        }
+    }
+}
